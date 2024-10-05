@@ -1,0 +1,180 @@
+[
+  {
+    "ContainingType": "ManagingContent.Controllers.AdminController",
+    "Method": "AssignTeacher",
+    "RelativePath": "api/Admin",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ManagingContent.Controllers.AdminController",
+    "Method": "ApproveStudent",
+    "RelativePath": "api/Admin/approve/{studentId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ManagingContent.Controllers.AdminController",
+    "Method": "RejectStudent",
+    "RelativePath": "api/Admin/reject/{studentId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ManagingContent.Controllers.ContentController",
+    "Method": "DeleteContent",
+    "RelativePath": "api/Content/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ManagingContent.Controllers.ContentController",
+    "Method": "PublishContent",
+    "RelativePath": "api/Content/publish/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ManagingContent.Controllers.ContentController",
+    "Method": "SearchContent",
+    "RelativePath": "api/Content/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ManagingContent.Controllers.ContentController",
+    "Method": "UploadFile",
+    "RelativePath": "api/Content/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ManagingContent.Controllers.StudentController",
+    "Method": "RegisterStudent",
+    "RelativePath": "api/Student/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerVM",
+        "Type": "ManagingContent.VmModel.RegisterVM",
+        "IsRequired": true
+      },
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
